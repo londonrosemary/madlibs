@@ -9,4 +9,9 @@ ADJECTIVE = input()
 print("Plural Noun:")
 PLURALNOUN = input()
 
-print(mad_lib)
+madlib = madlib.replace("{VERB}", VERB)
+madlib = madlib.replace("{NOUN}", NOUN)
+madlib = madlib.replace("{ADJECTIVE}", ADJECTIVE)
+madlib = madlib.replace("{PLURALNOUN}", PLURALNOUN)
+
+print(madlib)
